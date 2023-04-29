@@ -74,8 +74,8 @@ button {
 }
 .card {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
 }
 .card-front,
@@ -162,8 +162,8 @@ button {
         }
         .card{
     
-        width: 65px;
-        height: 65px;
+        width: 75px;
+        height: 75px;
         }
       }
       @media (max-width: 360px) {
@@ -176,8 +176,8 @@ button {
           }
           .card{
       
-          width: 60px;
-          height: 60px;
+          width: 67px;
+          height: 67px;
           }
         }
         @media (max-width: 250px) {
