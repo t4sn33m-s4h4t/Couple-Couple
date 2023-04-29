@@ -35,7 +35,7 @@ const generateGame = () => {
 
 
     let emojis = '[{"key": 1, "name": "zim.jpg"}, {"key": 1, "name": "rukaiya.jpg"}, {"key": 2, "name": "hamid.jpg"}, {"key": 2, "name": "rutobah.jpg"}, {"key": 3, "name": "arian.jpg"}, {"key": 3, "name": "dia.jpg"}, {"key": 4, "name": "atul.jpg"}, {"key": 4, "name": "sifat.jpg"}, {"key": 5, "name": "sadman.jpg"}, {"key": 5, "name": "shormi.jpg"}, {"key": 6, "name": "zubayer.jpg"}, {"key": 6, "name": "mehrin.jpg"}, {"key": 7, "name": "labib.jpg"}, {"key": 7, "name": "prionti.jpg"}, {"key": 8, "name": "shuvro.jpg"}, {"key": 8, "name": "maria.jpg"}, {"key": 9, "name": "rijvi.jpg"}, {"key": 9, "name": "nazifa.jpg"}, {"key": 10, "name": "farhan.jpg"}, {"key": 10, "name": "medha.jpg"}, {"key": 11, "name": "bari.jpg"}, {"key": 11, "name": "arola.jpg"}, {"key": 12, "name": "alvee.jpg"}, {"key": 12, "name": "mishu.jpg"}]'
-    emojis=JSON.parse(emojis)
+    emojis = JSON.parse(emojis)
     const items = shuffle([...emojis])
     const boardDiv = document.createElement('div');
     boardDiv.classList.add('board');
@@ -102,7 +102,8 @@ const flipCard = card => {
         firstcard = flippedCards[0].querySelector('.card-back').getAttribute('MatchSymbol')
         secondcard = flippedCards[1].querySelector('.card-back').getAttribute('MatchSymbol')
         console.log(firstcard, secondcard)
-        if (firstcard === secondcard) {``
+        if (firstcard === secondcard) {
+            ``
             flippedCards[0].classList.add('matched')
             flippedCards[1].classList.add('matched')
         }
@@ -143,8 +144,8 @@ const attachEventListeners = () => {
 window.addEventListener("load", function () {
     const loader = document.getElementById("loader");
     setTimeout(function () {
-      loader.style.display = "none";
-    }, 10000);
-  });
+        loader.style.display = "none";
+    }, 8000);
+});
 generateGame()
 attachEventListeners()
