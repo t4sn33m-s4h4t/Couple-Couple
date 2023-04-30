@@ -102,13 +102,26 @@ button {
 }
 
 .card-back {
+    -webkit-transform: rotateY(180deg) rotateZ(50deg);
+    -moz-transform: rotateY(180deg) rotateZ(50deg);
+    -ms-transform: rotateY(180deg) rotateZ(50deg);
+    -o-transform: rotateY(180deg) rotateZ(50deg);
     transform: rotateY(180deg) rotateZ(50deg);
     font-size: 28pt;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     text-align: center;
     line-height: 100px;
     background-size: cover;
-}
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    
+    background-size: cover;
+    }
 
 .card.flipped .card-front {
     transform: rotateY(180deg) rotateZ(50deg);
